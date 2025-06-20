@@ -46,24 +46,24 @@ const Paste = () => {
               </div>
 
               {/* Paste Actions */}
-              <div className="flex flex-wrap gap-4 justify-start mt-2">
+              <div className="flex flex-row flex-wrap gap-2 mt-2 text-sm">
                 <button
                   onClick={() => navigate(`/?pasteId=${paste?._id}`)}
-                  className="px-4 py-2 rounded-lg bg-blue-100 hover:bg-blue-200 text-blue-700 font-medium transition"
+                  className="px-3 py-1 rounded-md bg-blue-100 hover:bg-blue-200 text-blue-700 font-medium transition"
                 >
                   Edit
                 </button>
 
                 <button
                   onClick={() => navigate(`/pastes/${paste?._id}`)}
-                  className="px-4 py-2 rounded-lg bg-green-100 hover:bg-green-200 text-green-700 font-medium transition"
+                  className="px-3 py-1 rounded-md bg-green-100 hover:bg-green-200 text-green-700 font-medium transition"
                 >
                   View
                 </button>
 
                 <button
                   onClick={() => handleDelete(paste?._id)}
-                  className="px-4 py-2 rounded-lg bg-red-100 hover:bg-red-200 text-red-700 font-medium transition"
+                  className="px-3 py-1 rounded-md bg-red-100 hover:bg-red-200 text-red-700 font-medium transition"
                 >
                   Delete
                 </button>
@@ -81,7 +81,7 @@ const Paste = () => {
                       toast.error("Share failed or canceled.");
                     }
                   }}
-                  className="px-4 py-2 rounded-lg bg-purple-100 hover:bg-purple-200 text-purple-700 font-medium transition"
+                  className="px-3 py-1 rounded-md bg-purple-100 hover:bg-purple-200 text-purple-700 font-medium transition"
                 >
                   Share
                 </button>
@@ -91,7 +91,7 @@ const Paste = () => {
                     navigator.clipboard.writeText(paste?.content);
                     toast.success("Copied to Clipboard");
                   }}
-                  className="px-4 py-2 rounded-lg bg-yellow-100 hover:bg-yellow-200 text-yellow-700 font-medium transition"
+                  className="px-3 py-1 rounded-md bg-yellow-100 hover:bg-yellow-200 text-yellow-700 font-medium transition"
                 >
                   Copy
                 </button>
