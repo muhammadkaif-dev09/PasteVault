@@ -1,4 +1,4 @@
-📝 Paste App
+📝 PasteVault App
 A simple, responsive React + Redux web application that allows users to create, update, view, copy, share, and manage pastes easily — just like Pastebin. Built with a clean UI using Tailwind CSS, and supports mobile-friendly features like native sharing and clipboard copy.
 
 🚀 Features
