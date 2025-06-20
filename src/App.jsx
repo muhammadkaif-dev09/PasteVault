@@ -10,32 +10,38 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <div className="flex flex-col min-h-screen">
-  <NavBar />
-  {/* Main content should grow to fill space */}
-  <main className="flex-grow">
-    <Home />
-  </main>
-  <Footer />
-</div>
-
+        <NavBar />
+        {/* Main content should grow to fill space */}
+        <main className="flex-grow">
+          <Home />
+        </main>
+        <Footer />
+      </div>
     ),
   },
   {
     path: "/pastes",
     element: (
-      <div>
+      <div className="flex flex-col min-h-screen">
         <NavBar />
-        <Paste />
+        {/* Main content should grow to fill space */}
+        <main className="flex-grow">
+          <Paste />
+        </main>
+        <Footer />
       </div>
     ),
   },
   {
     path: "/pastes/:id",
     element: (
-      <div>
+      <div className="flex flex-col min-h-screen">
         <NavBar />
-        <ViewPaste />
-        {/* <Home /> */}
+        {/* Main content should grow to fill space */}
+        <main className="flex-grow">
+          <ViewPaste />
+        </main>
+        <Footer />
       </div>
     ),
   },
